@@ -6,13 +6,14 @@ import com.iridium.iridiumskyblock.Utils;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
 public class BoosterCommand extends Command {
 
     public BoosterCommand() {
-        super(Collections.singletonList("booster"),"Opens the booster GUI", "", true);
+        super(Arrays.asList("wzmacniacze", "booster"),"Otwiera interfejs wzmacniaczy", "", true);
     }
 
     @Override

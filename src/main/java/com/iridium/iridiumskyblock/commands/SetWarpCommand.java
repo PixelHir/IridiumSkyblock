@@ -12,7 +12,7 @@ import java.util.List;
 public class SetWarpCommand extends Command {
 
     public SetWarpCommand() {
-        super(Arrays.asList("setwarp", "addwarp"), "Set a new island warp", "", true);
+        super(Arrays.asList("dodajwarp", "setwarp", "addwarp"), "Ustawia nowego warpa na wyspie", "", true);
     }
 
     @Override
@@ -31,7 +31,7 @@ public class SetWarpCommand extends Command {
                 p.sendMessage(Utils.color(IridiumSkyblock.getMessages().noIsland.replace("%prefix%", IridiumSkyblock.getConfiguration().prefix)));
             }
         } else {
-            p.sendMessage(Utils.color(IridiumSkyblock.getConfiguration().prefix) + "/is setwarp <name> (password)");
+            p.sendMessage(Utils.color(IridiumSkyblock.getConfiguration().prefix) + "/wyspa dodajwarp <nazwa> [hasło]");
         }
     }
 

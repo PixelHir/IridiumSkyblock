@@ -15,13 +15,13 @@ import java.util.List;
 public class GiveUpgradeCommand extends Command {
 
     public GiveUpgradeCommand() {
-        super(Collections.singletonList("giveupgrade"), "Give an Island an Upgrade", "giveupgrade", false);
+        super(Arrays.asList("dajulepszenie", "giveupgrade"), "Daje wyspie ulepszenie", "giveupgrade", false);
     }
 
     @Override
     public void execute(CommandSender sender, String[] args) {
         if (args.length != 4 && args.length != 3) {
-            sender.sendMessage(Utils.color(IridiumSkyblock.getConfiguration().prefix) + "/is giveupgrade <player> <upgrade> <level>");
+            sender.sendMessage(Utils.color(IridiumSkyblock.getConfiguration().prefix) + "/wyspa dajulepszenie <gracz> <ulepszenie> <poziom>");
             return;
         }
 

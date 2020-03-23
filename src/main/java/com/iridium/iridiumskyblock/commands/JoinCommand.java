@@ -9,13 +9,14 @@ import org.bukkit.OfflinePlayer;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
 public class JoinCommand extends Command {
 
     public JoinCommand() {
-        super(Collections.singletonList("join"),"Join another players island", "", true);
+        super(Arrays.asList("dolacz", "join"),"Dołącz do wyspy innego gracza.", "", true);
     }
 
     @Override

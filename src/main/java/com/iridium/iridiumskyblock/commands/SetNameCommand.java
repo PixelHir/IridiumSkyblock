@@ -8,13 +8,14 @@ import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
 public class SetNameCommand extends Command {
 
     public SetNameCommand() {
-        super(Collections.singletonList("setname"), "Set your islands name", "", true);
+        super(Arrays.asList("nazwa", "setname"), "Ustawia nazwę wyspy.", "", true);
     }
 
     @Override
@@ -22,7 +23,7 @@ public class SetNameCommand extends Command {
         Player p = (Player) sender;
         User user = User.getUser(p);
         if (args.length != 2) {
-            sender.sendMessage(Utils.color(IridiumSkyblock.getConfiguration().prefix) + "/is setname <Island Name>");
+            sender.sendMessage(Utils.color(IridiumSkyblock.getConfiguration().prefix) + "/wyspa nazwa <Nazwa Wyspy>");
             return;
         }
         if (user.getIsland() != null) {

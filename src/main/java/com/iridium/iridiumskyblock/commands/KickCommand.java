@@ -9,13 +9,14 @@ import org.bukkit.OfflinePlayer;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
 public class KickCommand extends Command {
 
     public KickCommand() {
-        super(Collections.singletonList("kick"), "Kick a player from your island", "", true);
+        super(Arrays.asList("wyrzuc", "kick"), "Wyrzuca gracza z twojej wyspy", "", true);
     }
 
     @Override

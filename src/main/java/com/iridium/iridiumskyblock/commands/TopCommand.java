@@ -10,7 +10,7 @@ import java.util.List;
 public class TopCommand extends Command {
 
     public TopCommand() {
-        super(Collections.singletonList("top"), "View the top islands", "", true);
+        super(Collections.singletonList("top"), "Wyświetla listę najlepszych wysp.", "", true);
     }
 
     @Override

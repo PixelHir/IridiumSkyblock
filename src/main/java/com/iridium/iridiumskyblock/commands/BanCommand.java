@@ -14,7 +14,7 @@ import java.util.List;
 public class BanCommand extends Command {
 
     public BanCommand() {
-        super(Collections.singletonList("ban"), "Ban a player from visiting your island", "", true);
+        super(Collections.singletonList("ban"), "Zabrania graczowi odwiedzać twoją wyspę.", "", true);
     }
 
     @Override

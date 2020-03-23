@@ -12,7 +12,7 @@ import java.util.List;
 public class ChatCommand extends Command {
 
     public ChatCommand() {
-        super(Collections.singletonList("chat"), "Talk to your island members", "", true);
+        super(Collections.singletonList("chat"), "Rozmowa z członkami twojej wyspy.", "", true);
     }
 
     @Override

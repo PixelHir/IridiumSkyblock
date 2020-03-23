@@ -8,13 +8,14 @@ import org.bukkit.OfflinePlayer;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
 public class VisitCommand extends Command {
 
     public VisitCommand() {
-        super(Collections.singletonList("visit"), "Visit another players island", "", true);
+        super(Arrays.asList("odwiedz", "visit"), "Pozwala na odwiedzenie wyspy innego gracza.", "", true);
     }
 
     @Override

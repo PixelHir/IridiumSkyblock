@@ -8,19 +8,20 @@ import org.bukkit.Bukkit;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.command.CommandSender;
 
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
 public class GiveCrystalsCommand extends Command {
 
     public GiveCrystalsCommand() {
-        super(Collections.singletonList("givecrystals"), "Give a player Crystals", "givecrystals", false);
+        super(Arrays.asList("dajkrysztaly", "givecrystals"), "Daje graczowi kryształy.", "givecrystals", false);
     }
 
     @Override
     public void execute(CommandSender sender, String[] args) {
         if (args.length != 3) {
-            sender.sendMessage(Utils.color(IridiumSkyblock.getConfiguration().prefix) + "/is givecrystals <player> <amount>");
+            sender.sendMessage(Utils.color(IridiumSkyblock.getConfiguration().prefix) + "/wyspa dajkrysztaly <player> <amount>");
             return;
         }
 

@@ -12,7 +12,7 @@ import java.util.List;
 public class SetHomeCommand extends Command {
 
     public SetHomeCommand() {
-        super(Collections.singletonList("sethome"), "Set your island home", "", true);
+        super(Collections.singletonList("sethome"), "Ustawia dom na wyspie.", "", true);
     }
 
     @Override

@@ -13,7 +13,7 @@ import java.util.List;
 public class HelpCommand extends Command {
 
     public HelpCommand() {
-        super(Arrays.asList("help"), "Displays the plugin commands", "", true);
+        super(Arrays.asList("pomoc", "help"), "Wyświetla dostępne polecenia.", "", true);
     }
 
     @Override

@@ -209,7 +209,7 @@ public class IridiumSkyblock extends JavaPlugin {
 
                 getLogger().info("-------------------------------");
                 getLogger().info("");
-                getLogger().info(getDescription().getName() + " Enabled!");
+                getLogger().info(getDescription().getName() + " Aktywowany!");
                 getLogger().info("");
                 getLogger().info("-------------------------------");
 

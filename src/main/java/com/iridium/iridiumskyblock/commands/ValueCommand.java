@@ -9,13 +9,14 @@ import org.bukkit.OfflinePlayer;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
 public class ValueCommand extends Command {
 
     public ValueCommand() {
-        super(Collections.singletonList("value"), "Shows your island value", "", true);
+        super(Arrays.asList("wartosc", "value"), "Pokazuje wartość twojej wyspy.", "", true);
     }
 
     @Override

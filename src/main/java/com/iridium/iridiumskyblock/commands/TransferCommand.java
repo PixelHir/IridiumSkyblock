@@ -16,13 +16,13 @@ import java.util.List;
 public class TransferCommand extends Command {
 
     public TransferCommand() {
-        super(Collections.singletonList("transfer"), "Transfer island ownership", "", true);
+        super(Collections.singletonList("transfer"), "Przekazuje własność nad wyspą.", "", true);
     }
 
     @Override
     public void execute(CommandSender sender, String[] args) {
         if (args.length != 2) {
-            sender.sendMessage(Utils.color(IridiumSkyblock.getConfiguration().prefix) + "/is transfer player");
+            sender.sendMessage(Utils.color(IridiumSkyblock.getConfiguration().prefix) + "/wyspa transfer <gracz>");
             return;
         }
         Player p = (Player) sender;

@@ -6,13 +6,14 @@ import com.iridium.iridiumskyblock.Utils;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
 public class PublicCommand extends Command {
 
     public PublicCommand() {
-        super(Collections.singletonList("public"), "allow players to visit your island", "", true);
+        super(Arrays.asList("publiczny", "public"), "Pozwala innym graczom odwiedzić twoją wyspę.", "", true);
     }
 
     @Override

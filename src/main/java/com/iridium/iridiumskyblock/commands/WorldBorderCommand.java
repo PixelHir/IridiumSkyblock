@@ -12,7 +12,7 @@ import java.util.List;
 public class WorldBorderCommand extends Command {
 
     public WorldBorderCommand() {
-        super(Arrays.asList("border", "worldborder", "color", "colour"), "Opens the WorldBorder GUI", "", true);
+        super(Arrays.asList("granica", "border", "worldborder", "color", "colour"), "Otwiera interfejs zarządzania granicą.", "", true);
     }
 
     @Override

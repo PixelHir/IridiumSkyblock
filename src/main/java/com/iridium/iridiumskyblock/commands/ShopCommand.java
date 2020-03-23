@@ -10,7 +10,7 @@ import java.util.List;
 public class ShopCommand extends Command {
 
     public ShopCommand() {
-        super(Arrays.asList("shop"), "Access the Skyblock Shop", "", true);
+        super(Arrays.asList("sklep", "shop"), "Dostęp do sklepu Skyblock.", "", true);
     }
 
     @Override

@@ -14,13 +14,13 @@ import java.util.List;
 public class UnBanCommand extends Command {
 
     public UnBanCommand() {
-        super(Collections.singletonList("unban"), "Un-ban a player from visiting your island", "", true);
+        super(Collections.singletonList("unban"), "Pozwala graczowi ponownie odwiedzić twoją wyspę.", "", true);
     }
 
     @Override
     public void execute(CommandSender sender, String[] args) {
         if (args.length != 2) {
-            sender.sendMessage(Utils.color(IridiumSkyblock.getConfiguration().prefix) + "/is unban <player>");
+            sender.sendMessage(Utils.color(IridiumSkyblock.getConfiguration().prefix) + "/wyspa unban <player>");
             return;
         }
         Player p = (Player) sender;

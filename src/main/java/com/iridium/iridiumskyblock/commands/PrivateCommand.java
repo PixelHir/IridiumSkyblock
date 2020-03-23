@@ -6,13 +6,14 @@ import com.iridium.iridiumskyblock.Utils;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
 public class PrivateCommand extends Command {
 
     public PrivateCommand() {
-        super(Collections.singletonList("private"), "Stop players visiting your island", "", true);
+        super(Arrays.asList("prywatny", "private"), "Zabroń innym graczom odwiedzać twoją wyspę.", "", true);
     }
 
     @Override

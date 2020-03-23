@@ -12,7 +12,7 @@ import java.util.List;
 public class HomeCommand extends Command {
 
     public HomeCommand() {
-        super(Collections.singletonList("home"),"Teleport to your island home", "", true);
+        super(Collections.singletonList("home"),"Przenosi cię do domu na twojej wyspie.", "", true);
     }
 
     @Override

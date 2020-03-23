@@ -16,7 +16,7 @@ import java.util.concurrent.TimeUnit;
 public class RegenCommand extends Command {
 
     public RegenCommand() {
-        super(Arrays.asList("regen", "reset"), "Regenerate your island", "", true);
+        super(Arrays.asList("regen", "reset"), "Regeneruje twoją wyspę", "", true);
     }
 
     @Override

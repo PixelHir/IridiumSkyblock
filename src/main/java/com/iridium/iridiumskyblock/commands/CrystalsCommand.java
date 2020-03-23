@@ -6,13 +6,14 @@ import com.iridium.iridiumskyblock.Utils;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
 public class CrystalsCommand extends Command {
 
     public CrystalsCommand() {
-        super(Collections.singletonList("crystals"),"Shows you how many crystals you have", "", true);
+        super(Arrays.asList("krysztaly"),"Sprawdza ile masz kryształów.", "", true);
     }
 
     @Override

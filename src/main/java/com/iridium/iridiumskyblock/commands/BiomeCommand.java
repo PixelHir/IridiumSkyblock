@@ -6,13 +6,14 @@ import com.iridium.iridiumskyblock.Utils;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
 public class BiomeCommand extends Command {
 
     public BiomeCommand() {
-        super(Collections.singletonList("biome"), "Opens the biome GUI", "", true);
+        super(Arrays.asList("biom", "biome"), "Opens the biome GUI", "", true);
     }
 
     @Override

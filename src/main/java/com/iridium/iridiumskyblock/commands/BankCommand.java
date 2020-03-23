@@ -12,7 +12,7 @@ import java.util.List;
 public class BankCommand extends Command {
 
     public BankCommand() {
-        super(Collections.singletonList("bank"), "Opens the bank GUI", "", true);
+        super(Collections.singletonList("bank"), "Otwiera interfejs banku", "", true);
     }
 
     @Override

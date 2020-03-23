@@ -14,7 +14,7 @@ import java.util.List;
 public class CoopCommand extends Command {
 
     public CoopCommand() {
-        super(Collections.singletonList("coop"), "Coops you to an island", "", true);
+        super(Collections.singletonList("coop"), "Zaprasza gracza do współpracy nad wyspą.", "", true);
     }
 
     @Override

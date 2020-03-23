@@ -15,7 +15,7 @@ import java.util.List;
 public class MembersCommand extends Command {
 
     public MembersCommand() {
-        super(Arrays.asList("members", "users", "list"), "View your island members", "", true);
+        super(Arrays.asList("list", "members", "users"), "Zobacz członków twojej wyspy.", "", true);
     }
 
     @Override

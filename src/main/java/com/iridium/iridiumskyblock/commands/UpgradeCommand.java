@@ -6,13 +6,14 @@ import com.iridium.iridiumskyblock.Utils;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
 public class UpgradeCommand extends Command {
 
     public UpgradeCommand() {
-        super(Collections.singletonList("upgrade"), "Opens the Upgrade GUI", "", true);
+        super(Arrays.asList("ulepsz", "upgrade"), "Otwiera interfejs ulepszeń.", "", true);
     }
 
     @Override

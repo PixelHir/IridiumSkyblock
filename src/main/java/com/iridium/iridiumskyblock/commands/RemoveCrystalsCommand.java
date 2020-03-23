@@ -14,14 +14,14 @@ import java.util.List;
 public class RemoveCrystalsCommand extends Command {
 
     public RemoveCrystalsCommand() {
-        super(Collections.singletonList("removecrystals"), "remove a player's Crystals", "removecrystals", false);
+        super(Collections.singletonList("usunkryształy"), "Usuwa kryształy graczowi.", "removecrystals", false);
     }
 
     @Override
     public void execute(CommandSender sender, String[] args) {
         if (args.length != 3) {
-            sender.sendMessage(Utils.color(IridiumSkyblock.getConfiguration().prefix) + "/is removecrystals <player> <amount>");
-            sender.sendMessage("/is removecrystals <player> <amount>");
+            sender.sendMessage(Utils.color(IridiumSkyblock.getConfiguration().prefix) + "/wyspa usunkrysztaly <gracz> <liczba>");
+            sender.sendMessage("/wyspa usunkrysztaly <gracz> <liczba>");
             return;
         }
 
@@ -35,7 +35,7 @@ public class RemoveCrystalsCommand extends Command {
                         island.setCrystals(island.getCrystals() - amount);
                         sender.sendMessage(Utils.color(IridiumSkyblock.getMessages().removedcrystals.replace("%crystals%", args[2]).replace("%player%", player.getName()).replace("%prefix%", IridiumSkyblock.getConfiguration().prefix)));
                     } catch (Exception e) {
-                        sender.sendMessage(args[2] + "is not a number");
+                        sender.sendMessage(args[2] + "to nie liczba");
                     }
                 } else {
                     sender.sendMessage(Utils.color(IridiumSkyblock.getMessages().playerNoIsland.replace("%prefix%", IridiumSkyblock.getConfiguration().prefix)));

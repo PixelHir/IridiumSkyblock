@@ -12,7 +12,7 @@ import java.util.List;
 public class FlyCommand extends Command {
 
     public FlyCommand() {
-        super(Arrays.asList("fly", "flight"), "Toggle your ability to fly", "", true);
+        super(Arrays.asList("fly", "flight"), "Pozwala ci latać.", "", true);
     }
 
     @Override

@@ -7,13 +7,14 @@ import com.iridium.iridiumskyblock.Utils;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
 public class LeaveCommand extends Command {
 
     public LeaveCommand() {
-        super(Collections.singletonList("leave"), "Leave an island", "", true);
+        super(Arrays.asList("opusc", "leave"), "Opuść wyspę.", "", true);
     }
 
     @Override

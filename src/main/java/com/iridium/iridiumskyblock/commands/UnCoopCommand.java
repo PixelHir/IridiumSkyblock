@@ -14,13 +14,13 @@ import java.util.List;
 public class UnCoopCommand extends Command {
 
     public UnCoopCommand() {
-        super(Collections.singletonList("uncoop"), "Revokes an Islands coop", "", true);
+        super(Collections.singletonList("uncoop"), "Kończy współpracę nad wyspą z graczem.", "", true);
     }
 
     @Override
     public void execute(CommandSender sender, String[] args) {
         if (args.length != 2) {
-            sender.sendMessage(Utils.color(IridiumSkyblock.getConfiguration().prefix) + "/is uncoop <player>");
+            sender.sendMessage(Utils.color(IridiumSkyblock.getConfiguration().prefix) + "/wyspa uncoop <gracz>");
             return;
         }
         Player p = (Player) sender;
