@@ -59,7 +59,7 @@ public class Messages {
     public String setHome = "%prefix% &7Ustawiono położenie domu w tym miejscu.";
     public String isNotSafe = "%prefix% &7To miejsce nie jest bezpieczne.";
     public String helpMessage = "&b&l * &7 %command% : &b %description%";
-    public String helpHeader = "&b&lIridiumSkyblock: &bHelp";
+    public String helpHeader = "&b&lSkyblock: &bPomoc";
     public String transferdOwnership = "%prefix% &7Przekazano własność nad wyspą graczowi %player%.";
     public String bannedFromIsland = "%prefix% &7Zostałeś zbanowany z tej wyspy.";
     public String playerBanned = "%prefix% &7Zbanowano gracza %player% z tej wyspy.";
